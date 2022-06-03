@@ -9,6 +9,8 @@ import { AboutComponent } from './about/about.component';
 import { AboutCompanyComponent } from './about-company/about-company.component';
 import { EmployeeListingComponent } from './employee-listing/employee-listing.component';
 import { EmployeeAddComponent } from './employee-add/employee-add.component';
+import {HttpClientModule} from '@angular/common/http'
+import {AdminRoutingModule} from './admin/admin-routing.module'
 
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import { EmployeeAddComponent } from './employee-add/employee-add.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    AdminRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
