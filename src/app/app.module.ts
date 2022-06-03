@@ -11,6 +11,10 @@ import { EmployeeListingComponent } from './employee-listing/employee-listing.co
 import { EmployeeAddComponent } from './employee-add/employee-add.component';
 import {HttpClientModule} from '@angular/common/http'
 import {AdminRoutingModule} from './admin/admin-routing.module'
+import{UserRoutingModule} from './user/user-routing.module';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { FormvalidationComponent } from './formvalidation/formvalidation.component'
+import  {ReactiveFormsModule} from '@angular/forms'
 
 @NgModule({
   declarations: [
@@ -20,13 +24,17 @@ import {AdminRoutingModule} from './admin/admin-routing.module'
     AboutComponent,
     AboutCompanyComponent,
     EmployeeListingComponent,
-    EmployeeAddComponent
+    EmployeeAddComponent,
+    FormvalidationComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    AdminRoutingModule
+    AdminRoutingModule,
+    UserRoutingModule,
+    NgbModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

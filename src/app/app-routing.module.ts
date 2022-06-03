@@ -5,10 +5,12 @@ import { AboutComponent } from './about/about.component';
 import { EmployeeAddComponent } from './employee-add/employee-add.component';
 import { EmployeeListingComponent } from './employee-listing/employee-listing.component';
 import { EmployeeComponent } from './employee/employee.component';
+import { FormvalidationComponent } from './formvalidation/formvalidation.component';
 import { HomeComponent } from './home/home.component';
 
 const routes: Routes = [
   {path:"",component:HomeComponent},
+  {path:"validation",component:FormvalidationComponent},
   {path:"about",component:AboutComponent ,children:[{path:"company",component:AboutCompanyComponent}]},
   {path:"employee",component:EmployeeComponent, children:[
     {path:"",component:EmployeeListingComponent},
